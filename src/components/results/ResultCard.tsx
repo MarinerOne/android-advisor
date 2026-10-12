@@ -4,6 +4,7 @@ import type { Recommendation } from '../../domain/types';
 import { hasUsableRetailerLink, resolveRetailerLink } from '../../data/affiliate';
 import { Card } from '../common/Card';
 import { FavouriteButton } from '../common/FavouriteButton';
+import { AffiliateNote } from '../common/AffiliateNote';
 import { useFriendlyMotion } from '../common/motion';
 
 const FALLBACK_IMAGE =
@@ -176,6 +177,7 @@ export function ResultCard({
               Link coming soon
             </button>
           )}
+          {hasLink && buyLink && <AffiliateNote className="text-center mt-2" />}
         </div>
       </Card>
     </motion.div>
