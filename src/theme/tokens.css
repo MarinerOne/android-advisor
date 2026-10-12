@@ -1,0 +1,46 @@
+/*
+ * Design tokens — the single source of truth for the app's look and feel.
+ * Change these values to re-theme the entire app. Components reference these
+ * via Tailwind utilities (see tailwind.config.js), never raw hex values.
+ */
+
+:root {
+  /* Colour palette — warm, friendly, approachable */
+  --color-bg: #fff7f0;          /* soft warm cream background */
+  --color-surface: #ffffff;      /* cards / panels */
+  --color-surface-alt: #fff0e4;  /* subtle alternate surface */
+  --color-ink: #2b2330;          /* primary text */
+  --color-ink-soft: #6b6472;     /* secondary text */
+  --color-primary: #ff6b4a;      /* warm coral — primary actions */
+  --color-primary-ink: #ffffff;  /* text on primary */
+  --color-accent: #7c5cff;       /* playful purple accent */
+  --color-success: #2bb673;      /* positive / match */
+  --color-border: #f0e2d6;       /* gentle borders */
+
+  /* Radii — generous rounded shapes for a friendly feel */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+  --radius-pill: 999px;
+
+  /* Typography */
+  --font-display: 'Baloo 2', 'Trebuchet MS', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Shadows — soft and lifted */
+  --shadow-soft: 0 6px 18px rgba(43, 35, 48, 0.08);
+  --shadow-lift: 0 14px 34px rgba(43, 35, 48, 0.14);
+
+  /* Motion durations */
+  --motion-fast: 150ms;
+  --motion-base: 320ms;
+}
+
+/* Respect users who prefer reduced motion: neutralise durations globally. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-base: 0ms;
+  }
+}

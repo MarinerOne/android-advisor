@@ -1,0 +1,287 @@
+[
+  {
+    "id": "moto-g24",
+    "name": "Motorola Moto G24",
+    "brand": "Motorola",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&q=70",
+    "priceGBP": 109,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 45,
+      "batteryScore": 82,
+      "performanceScore": 38,
+      "screenSize": 6.56,
+      "storageGB": 128
+    },
+    "tags": ["basics", "value", "social"],
+    "retailers": [
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=motorola+moto+g24", "isPlaceholder": true }
+    ]
+  },
+  {
+    "id": "samsung-a15",
+    "name": "Samsung Galaxy A15",
+    "brand": "Samsung",
+    "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&q=70",
+    "priceGBP": 149,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 55,
+      "batteryScore": 85,
+      "performanceScore": 42,
+      "screenSize": 6.5,
+      "storageGB": 128
+    },
+    "tags": ["basics", "social", "value"],
+    "retailers": [
+      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-a/galaxy-a15-blue-black-128gb-sm-a155fzkeeub/" }
+    ]
+  },
+  {
+    "id": "moto-g54",
+    "name": "Motorola Moto G54",
+    "brand": "Motorola",
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&q=70",
+    "priceGBP": 199,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 58,
+      "batteryScore": 88,
+      "performanceScore": 55,
+      "screenSize": 6.5,
+      "storageGB": 256
+    },
+    "tags": ["value", "social", "basics"],
+    "retailers": [
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=motorola+moto+g54", "isPlaceholder": true }
+    ]
+  },
+  {
+    "id": "pixel-7a",
+    "name": "Google Pixel 7a",
+    "brand": "Google",
+    "image": "https://images.unsplash.com/photo-1662947995689-ec5165b1f94c?w=600&q=70",
+    "priceGBP": 349,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 88,
+      "batteryScore": 68,
+      "performanceScore": 72,
+      "screenSize": 6.1,
+      "storageGB": 128
+    },
+    "tags": ["photography", "social"],
+    "retailers": [
+      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_7a" }
+    ]
+  },
+  {
+    "id": "samsung-a55",
+    "name": "Samsung Galaxy A55",
+    "brand": "Samsung",
+    "image": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=600&q=70",
+    "priceGBP": 389,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 72,
+      "batteryScore": 82,
+      "performanceScore": 68,
+      "screenSize": 6.6,
+      "storageGB": 128
+    },
+    "tags": ["social", "photography", "value"],
+    "retailers": [
+      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-a/galaxy-a55-5g-awesome-navy-128gb-sm-a556blvbeub/" }
+    ]
+  },
+  {
+    "id": "nothing-phone-2a",
+    "name": "Nothing Phone (2a)",
+    "brand": "Nothing",
+    "image": "https://images.unsplash.com/photo-1706412521907-1c9f5c6f0a2a?w=600&q=70",
+    "priceGBP": 319,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 70,
+      "batteryScore": 80,
+      "performanceScore": 70,
+      "screenSize": 6.7,
+      "storageGB": 128
+    },
+    "tags": ["social", "value", "gaming"],
+    "retailers": [
+      { "retailer": "Nothing", "url": "https://uk.nothing.tech/products/phone-2a" }
+    ]
+  },
+  {
+    "id": "pixel-8",
+    "name": "Google Pixel 8",
+    "brand": "Google",
+    "image": "https://images.unsplash.com/photo-1696423984554-3d4c6c6c3f5d?w=600&q=70",
+    "priceGBP": 499,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 92,
+      "batteryScore": 72,
+      "performanceScore": 82,
+      "screenSize": 6.2,
+      "storageGB": 128
+    },
+    "tags": ["photography", "work", "social"],
+    "retailers": [
+      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_8" }
+    ]
+  },
+  {
+    "id": "oneplus-12r",
+    "name": "OnePlus 12R",
+    "brand": "OnePlus",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&q=70",
+    "priceGBP": 549,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 75,
+      "batteryScore": 90,
+      "performanceScore": 88,
+      "screenSize": 6.78,
+      "storageGB": 256
+    },
+    "tags": ["gaming", "work", "social"],
+    "retailers": [
+      { "retailer": "OnePlus UK", "url": "https://www.oneplus.com/uk/oneplus-12r" }
+    ]
+  },
+  {
+    "id": "samsung-s24-fe",
+    "name": "Samsung Galaxy S24 FE",
+    "brand": "Samsung",
+    "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&q=70",
+    "priceGBP": 599,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 82,
+      "batteryScore": 80,
+      "performanceScore": 84,
+      "screenSize": 6.7,
+      "storageGB": 128
+    },
+    "tags": ["photography", "gaming", "work"],
+    "retailers": [
+      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24-fe/", "isPlaceholder": true }
+    ]
+  },
+  {
+    "id": "pixel-8-pro",
+    "name": "Google Pixel 8 Pro",
+    "brand": "Google",
+    "image": "https://images.unsplash.com/photo-1696423984554-3d4c6c6c3f5d?w=600&q=70",
+    "priceGBP": 699,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 96,
+      "batteryScore": 78,
+      "performanceScore": 86,
+      "screenSize": 6.7,
+      "storageGB": 128
+    },
+    "tags": ["photography", "work", "gaming"],
+    "retailers": [
+      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_8_pro" }
+    ]
+  },
+  {
+    "id": "oneplus-12",
+    "name": "OnePlus 12",
+    "brand": "OnePlus",
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&q=70",
+    "priceGBP": 749,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 85,
+      "batteryScore": 92,
+      "performanceScore": 94,
+      "screenSize": 6.82,
+      "storageGB": 256
+    },
+    "tags": ["gaming", "photography", "work"],
+    "retailers": [
+      { "retailer": "OnePlus UK", "url": "https://www.oneplus.com/uk/oneplus-12" }
+    ]
+  },
+  {
+    "id": "samsung-s24",
+    "name": "Samsung Galaxy S24",
+    "brand": "Samsung",
+    "image": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=600&q=70",
+    "priceGBP": 799,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 88,
+      "batteryScore": 76,
+      "performanceScore": 90,
+      "screenSize": 6.2,
+      "storageGB": 128
+    },
+    "tags": ["photography", "work", "gaming", "social"],
+    "retailers": [
+      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24/" }
+    ]
+  },
+  {
+    "id": "samsung-s24-ultra",
+    "name": "Samsung Galaxy S24 Ultra",
+    "brand": "Samsung",
+    "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&q=70",
+    "priceGBP": 1249,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 98,
+      "batteryScore": 85,
+      "performanceScore": 97,
+      "screenSize": 6.8,
+      "storageGB": 256
+    },
+    "tags": ["photography", "gaming", "work"],
+    "retailers": [
+      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24-ultra/" }
+    ]
+  },
+  {
+    "id": "pixel-9-pro",
+    "name": "Google Pixel 9 Pro",
+    "brand": "Google",
+    "image": "https://images.unsplash.com/photo-1696423984554-3d4c6c6c3f5d?w=600&q=70",
+    "priceGBP": 999,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 97,
+      "batteryScore": 80,
+      "performanceScore": 90,
+      "screenSize": 6.3,
+      "storageGB": 128
+    },
+    "tags": ["photography", "work", "gaming"],
+    "retailers": [
+      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_9_pro" }
+    ]
+  },
+  {
+    "id": "xiaomi-14",
+    "name": "Xiaomi 14",
+    "brand": "Xiaomi",
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&q=70",
+    "priceGBP": 849,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 90,
+      "batteryScore": 83,
+      "performanceScore": 95,
+      "screenSize": 6.36,
+      "storageGB": 512
+    },
+    "tags": ["photography", "gaming", "work"],
+    "retailers": [
+      { "retailer": "Xiaomi UK", "url": "https://www.mi.com/uk/product/xiaomi-14/", "isPlaceholder": true }
+    ]
+  }
+]
