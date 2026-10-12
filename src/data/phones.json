@@ -1,6 +1,6 @@
 [
   {
-    "id": "moto-g24",
+    "id": "motorola-moto-g24",
     "name": "Motorola Moto G24",
     "brand": "Motorola",
     "image": "",
@@ -13,13 +13,97 @@
       "screenSize": 6.56,
       "storageGB": 128
     },
-    "tags": ["basics", "value", "social"],
+    "tags": [
+      "basics",
+      "value",
+      "social"
+    ],
     "retailers": [
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+G24" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+G24"
+      }
     ]
   },
   {
-    "id": "samsung-a15",
+    "id": "motorola-moto-g04",
+    "name": "Motorola Moto G04",
+    "brand": "Motorola",
+    "image": "",
+    "priceGBP": 79,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 38,
+      "batteryScore": 80,
+      "performanceScore": 32,
+      "screenSize": 6.56,
+      "storageGB": 64
+    },
+    "tags": [
+      "basics",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+G04"
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-g34-5g",
+    "name": "Motorola Moto G34 5G",
+    "brand": "Motorola",
+    "image": "",
+    "priceGBP": 149,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 48,
+      "batteryScore": 83,
+      "performanceScore": 48,
+      "screenSize": 6.5,
+      "storageGB": 128
+    },
+    "tags": [
+      "value",
+      "social",
+      "basics"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+G34+5G"
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-g54-5g",
+    "name": "Motorola Moto G54 5G",
+    "brand": "Motorola",
+    "image": "",
+    "priceGBP": 199,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 58,
+      "batteryScore": 88,
+      "performanceScore": 55,
+      "screenSize": 6.5,
+      "storageGB": 256
+    },
+    "tags": [
+      "value",
+      "social",
+      "basics"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+G54+5G"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a15",
     "name": "Samsung Galaxy A15",
     "brand": "Samsung",
     "image": "",
@@ -32,32 +116,401 @@
       "screenSize": 6.5,
       "storageGB": 128
     },
-    "tags": ["basics", "social", "value"],
+    "tags": [
+      "basics",
+      "social",
+      "value"
+    ],
     "retailers": [
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A15" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A15"
+      }
     ]
   },
   {
-    "id": "moto-g54",
-    "name": "Motorola Moto G54",
-    "brand": "Motorola",
+    "id": "samsung-galaxy-a05s",
+    "name": "Samsung Galaxy A05s",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 119,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 46,
+      "batteryScore": 82,
+      "performanceScore": 36,
+      "screenSize": 6.7,
+      "storageGB": 64
+    },
+    "tags": [
+      "basics",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A05s"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a16-5g",
+    "name": "Samsung Galaxy A16 5G",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 179,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 56,
+      "batteryScore": 86,
+      "performanceScore": 46,
+      "screenSize": 6.7,
+      "storageGB": 128
+    },
+    "tags": [
+      "value",
+      "social",
+      "basics"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A16+5G"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-redmi-13c",
+    "name": "Xiaomi Redmi 13C",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 109,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 44,
+      "batteryScore": 84,
+      "performanceScore": 40,
+      "screenSize": 6.74,
+      "storageGB": 128
+    },
+    "tags": [
+      "basics",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Redmi+13C"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-redmi-note-13",
+    "name": "Xiaomi Redmi Note 13",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 169,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 66,
+      "batteryScore": 85,
+      "performanceScore": 54,
+      "screenSize": 6.67,
+      "storageGB": 128
+    },
+    "tags": [
+      "value",
+      "social",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Redmi+Note+13"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-redmi-13",
+    "name": "Xiaomi Redmi 13",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 159,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 58,
+      "batteryScore": 84,
+      "performanceScore": 50,
+      "screenSize": 6.79,
+      "storageGB": 128
+    },
+    "tags": [
+      "value",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Redmi+13"
+      }
+    ]
+  },
+  {
+    "id": "nokia-nokia-g42-5g",
+    "name": "Nokia Nokia G42 5G",
+    "brand": "Nokia",
+    "image": "",
+    "priceGBP": 169,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 52,
+      "batteryScore": 85,
+      "performanceScore": 48,
+      "screenSize": 6.56,
+      "storageGB": 128
+    },
+    "tags": [
+      "value",
+      "basics",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Nokia+Nokia+G42+5G"
+      }
+    ]
+  },
+  {
+    "id": "nokia-nokia-c32",
+    "name": "Nokia Nokia C32",
+    "brand": "Nokia",
+    "image": "",
+    "priceGBP": 99,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 42,
+      "batteryScore": 83,
+      "performanceScore": 30,
+      "screenSize": 6.5,
+      "storageGB": 64
+    },
+    "tags": [
+      "basics",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Nokia+Nokia+C32"
+      }
+    ]
+  },
+  {
+    "id": "realme-realme-c67",
+    "name": "Realme Realme C67",
+    "brand": "Realme",
+    "image": "",
+    "priceGBP": 169,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 60,
+      "batteryScore": 84,
+      "performanceScore": 52,
+      "screenSize": 6.72,
+      "storageGB": 128
+    },
+    "tags": [
+      "value",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Realme+Realme+C67"
+      }
+    ]
+  },
+  {
+    "id": "realme-realme-note-50",
+    "name": "Realme Realme Note 50",
+    "brand": "Realme",
+    "image": "",
+    "priceGBP": 99,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 40,
+      "batteryScore": 82,
+      "performanceScore": 34,
+      "screenSize": 6.74,
+      "storageGB": 64
+    },
+    "tags": [
+      "basics",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Realme+Realme+Note+50"
+      }
+    ]
+  },
+  {
+    "id": "honor-honor-x8b",
+    "name": "Honor Honor X8b",
+    "brand": "Honor",
     "image": "",
     "priceGBP": 199,
     "priceBand": "under-200",
     "specs": {
-      "cameraScore": 58,
-      "batteryScore": 88,
-      "performanceScore": 55,
-      "screenSize": 6.5,
+      "cameraScore": 64,
+      "batteryScore": 82,
+      "performanceScore": 56,
+      "screenSize": 6.7,
       "storageGB": 256
     },
-    "tags": ["value", "social", "basics"],
+    "tags": [
+      "value",
+      "social",
+      "photography"
+    ],
     "retailers": [
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+G54" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Honor+Honor+X8b"
+      }
     ]
   },
   {
-    "id": "pixel-7a",
+    "id": "nothing-cmf-phone-1",
+    "name": "Nothing CMF Phone 1",
+    "brand": "Nothing",
+    "image": "",
+    "priceGBP": 199,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 62,
+      "batteryScore": 86,
+      "performanceScore": 62,
+      "screenSize": 6.67,
+      "storageGB": 128
+    },
+    "tags": [
+      "value",
+      "social",
+      "gaming"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Nothing+CMF+Phone+1"
+      }
+    ]
+  },
+  {
+    "id": "oppo-oppo-a79-5g",
+    "name": "Oppo Oppo A79 5G",
+    "brand": "Oppo",
+    "image": "",
+    "priceGBP": 189,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 56,
+      "batteryScore": 85,
+      "performanceScore": 52,
+      "screenSize": 6.72,
+      "storageGB": 128
+    },
+    "tags": [
+      "value",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Oppo+Oppo+A79+5G"
+      }
+    ]
+  },
+  {
+    "id": "tcl-tcl-50-se",
+    "name": "TCL TCL 50 SE",
+    "brand": "TCL",
+    "image": "",
+    "priceGBP": 129,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 48,
+      "batteryScore": 84,
+      "performanceScore": 42,
+      "screenSize": 6.78,
+      "storageGB": 128
+    },
+    "tags": [
+      "basics",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=TCL+TCL+50+SE"
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-g-play-2024",
+    "name": "Motorola Moto G Play 2024",
+    "brand": "Motorola",
+    "image": "",
+    "priceGBP": 99,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 40,
+      "batteryScore": 83,
+      "performanceScore": 34,
+      "screenSize": 6.5,
+      "storageGB": 64
+    },
+    "tags": [
+      "basics",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+G+Play+2024"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a14",
+    "name": "Samsung Galaxy A14",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 129,
+    "priceBand": "under-200",
+    "specs": {
+      "cameraScore": 50,
+      "batteryScore": 83,
+      "performanceScore": 38,
+      "screenSize": 6.6,
+      "storageGB": 64
+    },
+    "tags": [
+      "basics",
+      "value",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A14"
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-7a",
     "name": "Google Pixel 7a",
     "brand": "Google",
     "image": "",
@@ -70,15 +523,46 @@
       "screenSize": 6.1,
       "storageGB": 128
     },
-    "tags": ["photography", "social"],
+    "tags": [
+      "photography",
+      "social"
+    ],
     "retailers": [
-      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_7a" },
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Google+Pixel+7a" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Google+Pixel+7a"
+      }
     ]
   },
   {
-    "id": "samsung-a55",
-    "name": "Samsung Galaxy A55",
+    "id": "google-pixel-8a",
+    "name": "Google Pixel 8a",
+    "brand": "Google",
+    "image": "",
+    "priceGBP": 399,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 90,
+      "batteryScore": 72,
+      "performanceScore": 78,
+      "screenSize": 6.1,
+      "storageGB": 128
+    },
+    "tags": [
+      "photography",
+      "social",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Google+Pixel+8a"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a55-5g",
+    "name": "Samsung Galaxy A55 5G",
     "brand": "Samsung",
     "image": "",
     "priceGBP": 389,
@@ -90,14 +574,46 @@
       "screenSize": 6.6,
       "storageGB": 128
     },
-    "tags": ["social", "photography", "value"],
+    "tags": [
+      "social",
+      "photography",
+      "value"
+    ],
     "retailers": [
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A55+5G" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A55+5G"
+      }
     ]
   },
   {
-    "id": "nothing-phone-2a",
-    "name": "Nothing Phone (2a)",
+    "id": "samsung-galaxy-a35-5g",
+    "name": "Samsung Galaxy A35 5G",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 299,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 66,
+      "batteryScore": 83,
+      "performanceScore": 60,
+      "screenSize": 6.6,
+      "storageGB": 128
+    },
+    "tags": [
+      "social",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A35+5G"
+      }
+    ]
+  },
+  {
+    "id": "nothing-nothing-phone-2a",
+    "name": "Nothing Nothing Phone 2a",
     "brand": "Nothing",
     "image": "",
     "priceGBP": 319,
@@ -109,13 +625,407 @@
       "screenSize": 6.7,
       "storageGB": 128
     },
-    "tags": ["social", "value", "gaming"],
+    "tags": [
+      "social",
+      "value",
+      "gaming"
+    ],
     "retailers": [
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Nothing+Phone+2a" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Nothing+Nothing+Phone+2a"
+      }
     ]
   },
   {
-    "id": "pixel-8",
+    "id": "nothing-nothing-phone-2a-plus",
+    "name": "Nothing Nothing Phone 2a Plus",
+    "brand": "Nothing",
+    "image": "",
+    "priceGBP": 399,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 74,
+      "batteryScore": 82,
+      "performanceScore": 76,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "gaming",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Nothing+Nothing+Phone+2a+Plus"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-redmi-note-13-pro",
+    "name": "Xiaomi Redmi Note 13 Pro",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 329,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 80,
+      "batteryScore": 85,
+      "performanceScore": 68,
+      "screenSize": 6.67,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "social",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Redmi+Note+13+Pro"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-poco-x6-pro",
+    "name": "Xiaomi Poco X6 Pro",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 329,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 70,
+      "batteryScore": 84,
+      "performanceScore": 82,
+      "screenSize": 6.67,
+      "storageGB": 256
+    },
+    "tags": [
+      "gaming",
+      "social",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Poco+X6+Pro"
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-edge-50-neo",
+    "name": "Motorola Moto Edge 50 Neo",
+    "brand": "Motorola",
+    "image": "",
+    "priceGBP": 349,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 76,
+      "batteryScore": 84,
+      "performanceScore": 70,
+      "screenSize": 6.4,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "photography",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+Edge+50+Neo"
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-edge-50-fusion",
+    "name": "Motorola Moto Edge 50 Fusion",
+    "brand": "Motorola",
+    "image": "",
+    "priceGBP": 299,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 72,
+      "batteryScore": 86,
+      "performanceScore": 66,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "value",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+Edge+50+Fusion"
+      }
+    ]
+  },
+  {
+    "id": "honor-honor-90-lite",
+    "name": "Honor Honor 90 Lite",
+    "brand": "Honor",
+    "image": "",
+    "priceGBP": 249,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 68,
+      "batteryScore": 80,
+      "performanceScore": 54,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Honor+Honor+90+Lite"
+      }
+    ]
+  },
+  {
+    "id": "honor-honor-200-lite",
+    "name": "Honor Honor 200 Lite",
+    "brand": "Honor",
+    "image": "",
+    "priceGBP": 299,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 74,
+      "batteryScore": 80,
+      "performanceScore": 60,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "photography",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Honor+Honor+200+Lite"
+      }
+    ]
+  },
+  {
+    "id": "realme-realme-12-pro",
+    "name": "Realme Realme 12 Pro",
+    "brand": "Realme",
+    "image": "",
+    "priceGBP": 329,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 76,
+      "batteryScore": 85,
+      "performanceScore": 68,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "social",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Realme+Realme+12+Pro"
+      }
+    ]
+  },
+  {
+    "id": "realme-realme-12-plus",
+    "name": "Realme Realme 12+",
+    "brand": "Realme",
+    "image": "",
+    "priceGBP": 279,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 72,
+      "batteryScore": 86,
+      "performanceScore": 66,
+      "screenSize": 6.67,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "value",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Realme+Realme+12%2B"
+      }
+    ]
+  },
+  {
+    "id": "oppo-oppo-reno-11-f",
+    "name": "Oppo Oppo Reno 11 F",
+    "brand": "Oppo",
+    "image": "",
+    "priceGBP": 329,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 72,
+      "batteryScore": 84,
+      "performanceScore": 62,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Oppo+Oppo+Reno+11+F"
+      }
+    ]
+  },
+  {
+    "id": "nokia-nokia-xr21",
+    "name": "Nokia Nokia XR21",
+    "brand": "Nokia",
+    "image": "",
+    "priceGBP": 349,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 62,
+      "batteryScore": 85,
+      "performanceScore": 60,
+      "screenSize": 6.49,
+      "storageGB": 128
+    },
+    "tags": [
+      "value",
+      "work",
+      "basics"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Nokia+Nokia+XR21"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a54-5g",
+    "name": "Samsung Galaxy A54 5G",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 329,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 70,
+      "batteryScore": 83,
+      "performanceScore": 64,
+      "screenSize": 6.4,
+      "storageGB": 128
+    },
+    "tags": [
+      "social",
+      "photography",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A54+5G"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-poco-f6",
+    "name": "Xiaomi Poco F6",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 399,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 72,
+      "batteryScore": 85,
+      "performanceScore": 88,
+      "screenSize": 6.67,
+      "storageGB": 256
+    },
+    "tags": [
+      "gaming",
+      "social",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Poco+F6"
+      }
+    ]
+  },
+  {
+    "id": "tcl-tcl-50-pro-nxtpaper",
+    "name": "TCL TCL 50 Pro NXTPAPER",
+    "brand": "TCL",
+    "image": "",
+    "priceGBP": 349,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 66,
+      "batteryScore": 86,
+      "performanceScore": 58,
+      "screenSize": 6.8,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=TCL+TCL+50+Pro+NXTPAPER"
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-g85-5g",
+    "name": "Motorola Moto G85 5G",
+    "brand": "Motorola",
+    "image": "",
+    "priceGBP": 279,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 70,
+      "batteryScore": 86,
+      "performanceScore": 62,
+      "screenSize": 6.67,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "value",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+G85+5G"
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-8",
     "name": "Google Pixel 8",
     "brand": "Google",
     "image": "",
@@ -128,15 +1038,47 @@
       "screenSize": 6.2,
       "storageGB": 128
     },
-    "tags": ["photography", "work", "social"],
+    "tags": [
+      "photography",
+      "work",
+      "social"
+    ],
     "retailers": [
-      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_8" },
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Google+Pixel+8" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Google+Pixel+8"
+      }
     ]
   },
   {
-    "id": "oneplus-12r",
-    "name": "OnePlus 12R",
+    "id": "google-pixel-9",
+    "name": "Google Pixel 9",
+    "brand": "Google",
+    "image": "",
+    "priceGBP": 599,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 93,
+      "batteryScore": 76,
+      "performanceScore": 86,
+      "screenSize": 6.3,
+      "storageGB": 128
+    },
+    "tags": [
+      "photography",
+      "work",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Google+Pixel+9"
+      }
+    ]
+  },
+  {
+    "id": "oneplus-oneplus-12r",
+    "name": "OnePlus OnePlus 12R",
     "brand": "OnePlus",
     "image": "",
     "priceGBP": 549,
@@ -148,13 +1090,46 @@
       "screenSize": 6.78,
       "storageGB": 256
     },
-    "tags": ["gaming", "work", "social"],
+    "tags": [
+      "gaming",
+      "work",
+      "social"
+    ],
     "retailers": [
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=OnePlus+12R" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=OnePlus+OnePlus+12R"
+      }
     ]
   },
   {
-    "id": "samsung-s24-fe",
+    "id": "oneplus-oneplus-nord-4",
+    "name": "OnePlus OnePlus Nord 4",
+    "brand": "OnePlus",
+    "image": "",
+    "priceGBP": 449,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 76,
+      "batteryScore": 88,
+      "performanceScore": 84,
+      "screenSize": 6.74,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "gaming",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=OnePlus+OnePlus+Nord+4"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s24-fe",
     "name": "Samsung Galaxy S24 FE",
     "brand": "Samsung",
     "image": "",
@@ -167,14 +1142,405 @@
       "screenSize": 6.7,
       "storageGB": 128
     },
-    "tags": ["photography", "gaming", "work"],
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
     "retailers": [
-      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24-fe/" },
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S24+FE" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S24+FE"
+      }
     ]
   },
   {
-    "id": "pixel-8-pro",
+    "id": "samsung-galaxy-a73-5g",
+    "name": "Samsung Galaxy A73 5G",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 449,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 74,
+      "batteryScore": 82,
+      "performanceScore": 70,
+      "screenSize": 6.7,
+      "storageGB": 128
+    },
+    "tags": [
+      "social",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A73+5G"
+      }
+    ]
+  },
+  {
+    "id": "nothing-nothing-phone-2",
+    "name": "Nothing Nothing Phone 2",
+    "brand": "Nothing",
+    "image": "",
+    "priceGBP": 579,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 80,
+      "batteryScore": 82,
+      "performanceScore": 84,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "gaming",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Nothing+Nothing+Phone+2"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-xiaomi-14-lite",
+    "name": "Xiaomi Xiaomi 14 Lite",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 499,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 80,
+      "batteryScore": 82,
+      "performanceScore": 80,
+      "screenSize": 6.55,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Xiaomi+14+Lite"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-poco-f6-pro",
+    "name": "Xiaomi Poco F6 Pro",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 549,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 78,
+      "batteryScore": 84,
+      "performanceScore": 92,
+      "screenSize": 6.67,
+      "storageGB": 512
+    },
+    "tags": [
+      "gaming",
+      "work",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Poco+F6+Pro"
+      }
+    ]
+  },
+  {
+    "id": "honor-honor-200",
+    "name": "Honor Honor 200",
+    "brand": "Honor",
+    "image": "",
+    "priceGBP": 499,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 84,
+      "batteryScore": 82,
+      "performanceScore": 82,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "social",
+      "gaming"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Honor+Honor+200"
+      }
+    ]
+  },
+  {
+    "id": "honor-honor-magic-6-lite",
+    "name": "Honor Honor Magic 6 Lite",
+    "brand": "Honor",
+    "image": "",
+    "priceGBP": 399,
+    "priceBand": "200-400",
+    "specs": {
+      "cameraScore": 72,
+      "batteryScore": 90,
+      "performanceScore": 64,
+      "screenSize": 6.78,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Honor+Honor+Magic+6+Lite"
+      }
+    ]
+  },
+  {
+    "id": "motorola-motorola-edge-50-pro",
+    "name": "Motorola Motorola Edge 50 Pro",
+    "brand": "Motorola",
+    "image": "",
+    "priceGBP": 499,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 82,
+      "batteryScore": 84,
+      "performanceScore": 80,
+      "screenSize": 6.7,
+      "storageGB": 512
+    },
+    "tags": [
+      "photography",
+      "social",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Motorola+Motorola+Edge+50+Pro"
+      }
+    ]
+  },
+  {
+    "id": "realme-realme-gt-6",
+    "name": "Realme Realme GT 6",
+    "brand": "Realme",
+    "image": "",
+    "priceGBP": 549,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 80,
+      "batteryScore": 86,
+      "performanceScore": 92,
+      "screenSize": 6.78,
+      "storageGB": 256
+    },
+    "tags": [
+      "gaming",
+      "photography",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Realme+Realme+GT+6"
+      }
+    ]
+  },
+  {
+    "id": "oppo-oppo-reno-12-pro",
+    "name": "Oppo Oppo Reno 12 Pro",
+    "brand": "Oppo",
+    "image": "",
+    "priceGBP": 599,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 82,
+      "batteryScore": 84,
+      "performanceScore": 80,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "social",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Oppo+Oppo+Reno+12+Pro"
+      }
+    ]
+  },
+  {
+    "id": "sony-sony-xperia-10-vi",
+    "name": "Sony Sony Xperia 10 VI",
+    "brand": "Sony",
+    "image": "",
+    "priceGBP": 429,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 66,
+      "batteryScore": 90,
+      "performanceScore": 62,
+      "screenSize": 6.1,
+      "storageGB": 128
+    },
+    "tags": [
+      "value",
+      "basics",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Sony+Sony+Xperia+10+VI"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a72",
+    "name": "Samsung Galaxy A72",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 419,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 70,
+      "batteryScore": 84,
+      "performanceScore": 62,
+      "screenSize": 6.7,
+      "storageGB": 128
+    },
+    "tags": [
+      "social",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A72"
+      }
+    ]
+  },
+  {
+    "id": "oneplus-oneplus-nord-ce-4",
+    "name": "OnePlus OnePlus Nord CE 4",
+    "brand": "OnePlus",
+    "image": "",
+    "priceGBP": 429,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 72,
+      "batteryScore": 88,
+      "performanceScore": 80,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "gaming",
+      "value"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=OnePlus+OnePlus+Nord+CE+4"
+      }
+    ]
+  },
+  {
+    "id": "vivo-vivo-v40",
+    "name": "Vivo Vivo V40",
+    "brand": "Vivo",
+    "image": "",
+    "priceGBP": 499,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 82,
+      "batteryScore": 84,
+      "performanceScore": 78,
+      "screenSize": 6.78,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Vivo+Vivo+V40"
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-7",
+    "name": "Google Pixel 7",
+    "brand": "Google",
+    "image": "",
+    "priceGBP": 449,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 90,
+      "batteryScore": 70,
+      "performanceScore": 80,
+      "screenSize": 6.3,
+      "storageGB": 128
+    },
+    "tags": [
+      "photography",
+      "work",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Google+Pixel+7"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-xiaomi-13t",
+    "name": "Xiaomi Xiaomi 13T",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 549,
+    "priceBand": "400-600",
+    "specs": {
+      "cameraScore": 84,
+      "batteryScore": 84,
+      "performanceScore": 86,
+      "screenSize": 6.67,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Xiaomi+13T"
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-8-pro",
     "name": "Google Pixel 8 Pro",
     "brand": "Google",
     "image": "",
@@ -187,15 +1553,21 @@
       "screenSize": 6.7,
       "storageGB": 128
     },
-    "tags": ["photography", "work", "gaming"],
+    "tags": [
+      "photography",
+      "work",
+      "gaming"
+    ],
     "retailers": [
-      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_8_pro" },
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Google+Pixel+8+Pro" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Google+Pixel+8+Pro"
+      }
     ]
   },
   {
-    "id": "oneplus-12",
-    "name": "OnePlus 12",
+    "id": "oneplus-oneplus-12",
+    "name": "OnePlus OnePlus 12",
     "brand": "OnePlus",
     "image": "",
     "priceGBP": 749,
@@ -207,14 +1579,20 @@
       "screenSize": 6.82,
       "storageGB": 256
     },
-    "tags": ["gaming", "photography", "work"],
+    "tags": [
+      "gaming",
+      "photography",
+      "work"
+    ],
     "retailers": [
-      { "retailer": "OnePlus UK", "url": "https://www.oneplus.com/uk/oneplus-12" },
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=OnePlus+12" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=OnePlus+OnePlus+12"
+      }
     ]
   },
   {
-    "id": "samsung-s24",
+    "id": "samsung-galaxy-s24",
     "name": "Samsung Galaxy S24",
     "brand": "Samsung",
     "image": "",
@@ -227,14 +1605,460 @@
       "screenSize": 6.2,
       "storageGB": 128
     },
-    "tags": ["photography", "work", "gaming", "social"],
+    "tags": [
+      "photography",
+      "work",
+      "gaming",
+      "social"
+    ],
     "retailers": [
-      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24/" },
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S24" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S24"
+      }
     ]
   },
   {
-    "id": "samsung-s24-ultra",
+    "id": "samsung-galaxy-s23",
+    "name": "Samsung Galaxy S23",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 649,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 86,
+      "batteryScore": 76,
+      "performanceScore": 86,
+      "screenSize": 6.1,
+      "storageGB": 128
+    },
+    "tags": [
+      "photography",
+      "work",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S23"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-xiaomi-14",
+    "name": "Xiaomi Xiaomi 14",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 799,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 90,
+      "batteryScore": 83,
+      "performanceScore": 95,
+      "screenSize": 6.36,
+      "storageGB": 512
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Xiaomi+14"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-xiaomi-13t-pro",
+    "name": "Xiaomi Xiaomi 13T Pro",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 699,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 86,
+      "batteryScore": 85,
+      "performanceScore": 92,
+      "screenSize": 6.67,
+      "storageGB": 512
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Xiaomi+13T+Pro"
+      }
+    ]
+  },
+  {
+    "id": "honor-honor-magic-6-pro",
+    "name": "Honor Honor Magic 6 Pro",
+    "brand": "Honor",
+    "image": "",
+    "priceGBP": 799,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 92,
+      "batteryScore": 90,
+      "performanceScore": 92,
+      "screenSize": 6.8,
+      "storageGB": 512
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Honor+Honor+Magic+6+Pro"
+      }
+    ]
+  },
+  {
+    "id": "sony-sony-xperia-5-v",
+    "name": "Sony Sony Xperia 5 V",
+    "brand": "Sony",
+    "image": "",
+    "priceGBP": 799,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 86,
+      "batteryScore": 82,
+      "performanceScore": 88,
+      "screenSize": 6.1,
+      "storageGB": 128
+    },
+    "tags": [
+      "photography",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Sony+Sony+Xperia+5+V"
+      }
+    ]
+  },
+  {
+    "id": "nothing-nothing-phone-3",
+    "name": "Nothing Nothing Phone 3",
+    "brand": "Nothing",
+    "image": "",
+    "priceGBP": 699,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 84,
+      "batteryScore": 84,
+      "performanceScore": 88,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "gaming",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Nothing+Nothing+Phone+3"
+      }
+    ]
+  },
+  {
+    "id": "oppo-oppo-find-x7",
+    "name": "Oppo Oppo Find X7",
+    "brand": "Oppo",
+    "image": "",
+    "priceGBP": 749,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 90,
+      "batteryScore": 86,
+      "performanceScore": 90,
+      "screenSize": 6.78,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Oppo+Oppo+Find+X7"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-z-flip5",
+    "name": "Samsung Galaxy Z Flip5",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 799,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 84,
+      "batteryScore": 72,
+      "performanceScore": 88,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+Z+Flip5"
+      }
+    ]
+  },
+  {
+    "id": "vivo-vivo-x100",
+    "name": "Vivo Vivo X100",
+    "brand": "Vivo",
+    "image": "",
+    "priceGBP": 799,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 92,
+      "batteryScore": 88,
+      "performanceScore": 92,
+      "screenSize": 6.78,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Vivo+Vivo+X100"
+      }
+    ]
+  },
+  {
+    "id": "realme-realme-gt-6-pro",
+    "name": "Realme Realme GT 6 Pro",
+    "brand": "Realme",
+    "image": "",
+    "priceGBP": 699,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 86,
+      "batteryScore": 86,
+      "performanceScore": 94,
+      "screenSize": 6.78,
+      "storageGB": 512
+    },
+    "tags": [
+      "gaming",
+      "photography",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Realme+Realme+GT+6+Pro"
+      }
+    ]
+  },
+  {
+    "id": "motorola-motorola-edge-50-ultra",
+    "name": "Motorola Motorola Edge 50 Ultra",
+    "brand": "Motorola",
+    "image": "",
+    "priceGBP": 699,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 86,
+      "batteryScore": 86,
+      "performanceScore": 88,
+      "screenSize": 6.7,
+      "storageGB": 512
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Motorola+Motorola+Edge+50+Ultra"
+      }
+    ]
+  },
+  {
+    "id": "asus-asus-zenfone-11-ultra",
+    "name": "Asus Asus Zenfone 11 Ultra",
+    "brand": "Asus",
+    "image": "",
+    "priceGBP": 799,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 84,
+      "batteryScore": 88,
+      "performanceScore": 94,
+      "screenSize": 6.78,
+      "storageGB": 256
+    },
+    "tags": [
+      "gaming",
+      "work",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Asus+Asus+Zenfone+11+Ultra"
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-9-256gb",
+    "name": "Google Pixel 9 (256GB)",
+    "brand": "Google",
+    "image": "",
+    "priceGBP": 699,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 93,
+      "batteryScore": 76,
+      "performanceScore": 86,
+      "screenSize": 6.3,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "work",
+      "social"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Google+Pixel+9+(256GB)"
+      }
+    ]
+  },
+  {
+    "id": "oneplus-oneplus-11",
+    "name": "OnePlus OnePlus 11",
+    "brand": "OnePlus",
+    "image": "",
+    "priceGBP": 699,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 84,
+      "batteryScore": 88,
+      "performanceScore": 90,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "gaming",
+      "photography",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=OnePlus+OnePlus+11"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s23-fe",
+    "name": "Samsung Galaxy S23 FE",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 649,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 80,
+      "batteryScore": 80,
+      "performanceScore": 82,
+      "screenSize": 6.4,
+      "storageGB": 128
+    },
+    "tags": [
+      "photography",
+      "social",
+      "gaming"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S23+FE"
+      }
+    ]
+  },
+  {
+    "id": "honor-honor-magic-v2-lite",
+    "name": "Honor Honor Magic V2 Lite",
+    "brand": "Honor",
+    "image": "",
+    "priceGBP": 699,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 80,
+      "batteryScore": 86,
+      "performanceScore": 82,
+      "screenSize": 6.8,
+      "storageGB": 256
+    },
+    "tags": [
+      "social",
+      "photography"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Honor+Honor+Magic+V2+Lite"
+      }
+    ]
+  },
+  {
+    "id": "zte-nubia-z60-ultra",
+    "name": "ZTE Nubia Z60 Ultra",
+    "brand": "ZTE",
+    "image": "",
+    "priceGBP": 699,
+    "priceBand": "600-800",
+    "specs": {
+      "cameraScore": 86,
+      "batteryScore": 90,
+      "performanceScore": 94,
+      "screenSize": 6.8,
+      "storageGB": 256
+    },
+    "tags": [
+      "gaming",
+      "photography",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=ZTE+Nubia+Z60+Ultra"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s24-ultra",
     "name": "Samsung Galaxy S24 Ultra",
     "brand": "Samsung",
     "image": "",
@@ -247,14 +2071,46 @@
       "screenSize": 6.8,
       "storageGB": 256
     },
-    "tags": ["photography", "gaming", "work"],
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
     "retailers": [
-      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24-ultra/" },
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S24+Ultra" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S24+Ultra"
+      }
     ]
   },
   {
-    "id": "pixel-9-pro",
+    "id": "samsung-galaxy-s24-plus",
+    "name": "Samsung Galaxy S24+",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 999,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 90,
+      "batteryScore": 82,
+      "performanceScore": 92,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S24%2B"
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-9-pro",
     "name": "Google Pixel 9 Pro",
     "brand": "Google",
     "image": "",
@@ -267,29 +2123,455 @@
       "screenSize": 6.3,
       "storageGB": 128
     },
-    "tags": ["photography", "work", "gaming"],
+    "tags": [
+      "photography",
+      "work",
+      "gaming"
+    ],
     "retailers": [
-      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_9_pro" },
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Google+Pixel+9+Pro" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Google+Pixel+9+Pro"
+      }
     ]
   },
   {
-    "id": "xiaomi-14",
-    "name": "Xiaomi 14",
+    "id": "google-pixel-9-pro-xl",
+    "name": "Google Pixel 9 Pro XL",
+    "brand": "Google",
+    "image": "",
+    "priceGBP": 1099,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 98,
+      "batteryScore": 84,
+      "performanceScore": 90,
+      "screenSize": 6.8,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "work",
+      "gaming"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Google+Pixel+9+Pro+XL"
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-9-pro-fold",
+    "name": "Google Pixel 9 Pro Fold",
+    "brand": "Google",
+    "image": "",
+    "priceGBP": 1749,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 94,
+      "batteryScore": 80,
+      "performanceScore": 90,
+      "screenSize": 8,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "work",
+      "gaming"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Google+Pixel+9+Pro+Fold"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-xiaomi-14-ultra",
+    "name": "Xiaomi Xiaomi 14 Ultra",
     "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 1299,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 99,
+      "batteryScore": 86,
+      "performanceScore": 96,
+      "screenSize": 6.73,
+      "storageGB": 512
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Xiaomi+14+Ultra"
+      }
+    ]
+  },
+  {
+    "id": "oneplus-oneplus-12-16gb",
+    "name": "OnePlus OnePlus 12 (16GB)",
+    "brand": "OnePlus",
     "image": "",
     "priceGBP": 849,
     "priceBand": "800-plus",
     "specs": {
-      "cameraScore": 90,
-      "batteryScore": 83,
+      "cameraScore": 86,
+      "batteryScore": 92,
       "performanceScore": 95,
-      "screenSize": 6.36,
+      "screenSize": 6.82,
       "storageGB": 512
     },
-    "tags": ["photography", "gaming", "work"],
+    "tags": [
+      "gaming",
+      "photography",
+      "work"
+    ],
     "retailers": [
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Xiaomi+14" }
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=OnePlus+OnePlus+12+(16GB)"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-z-fold6",
+    "name": "Samsung Galaxy Z Fold6",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 1799,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 92,
+      "batteryScore": 80,
+      "performanceScore": 95,
+      "screenSize": 7.6,
+      "storageGB": 256
+    },
+    "tags": [
+      "work",
+      "photography",
+      "gaming"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+Z+Fold6"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-z-flip6",
+    "name": "Samsung Galaxy Z Flip6",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 1049,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 88,
+      "batteryScore": 76,
+      "performanceScore": 92,
+      "screenSize": 6.7,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "social",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+Z+Flip6"
+      }
+    ]
+  },
+  {
+    "id": "sony-sony-xperia-1-vi",
+    "name": "Sony Sony Xperia 1 VI",
+    "brand": "Sony",
+    "image": "",
+    "priceGBP": 1299,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 94,
+      "batteryScore": 88,
+      "performanceScore": 94,
+      "screenSize": 6.5,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Sony+Sony+Xperia+1+VI"
+      }
+    ]
+  },
+  {
+    "id": "honor-honor-magic-v3",
+    "name": "Honor Honor Magic V3",
+    "brand": "Honor",
+    "image": "",
+    "priceGBP": 1699,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 92,
+      "batteryScore": 86,
+      "performanceScore": 94,
+      "screenSize": 7.92,
+      "storageGB": 512
+    },
+    "tags": [
+      "work",
+      "photography",
+      "gaming"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Honor+Honor+Magic+V3"
+      }
+    ]
+  },
+  {
+    "id": "oppo-oppo-find-x7-ultra",
+    "name": "Oppo Oppo Find X7 Ultra",
+    "brand": "Oppo",
+    "image": "",
+    "priceGBP": 1099,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 97,
+      "batteryScore": 88,
+      "performanceScore": 94,
+      "screenSize": 6.82,
+      "storageGB": 512
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Oppo+Oppo+Find+X7+Ultra"
+      }
+    ]
+  },
+  {
+    "id": "vivo-vivo-x100-pro",
+    "name": "Vivo Vivo X100 Pro",
+    "brand": "Vivo",
+    "image": "",
+    "priceGBP": 1099,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 98,
+      "batteryScore": 90,
+      "performanceScore": 94,
+      "screenSize": 6.78,
+      "storageGB": 512
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Vivo+Vivo+X100+Pro"
+      }
+    ]
+  },
+  {
+    "id": "asus-asus-rog-phone-8-pro",
+    "name": "Asus Asus ROG Phone 8 Pro",
+    "brand": "Asus",
+    "image": "",
+    "priceGBP": 1099,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 82,
+      "batteryScore": 92,
+      "performanceScore": 99,
+      "screenSize": 6.78,
+      "storageGB": 512
+    },
+    "tags": [
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Asus+Asus+ROG+Phone+8+Pro"
+      }
+    ]
+  },
+  {
+    "id": "asus-asus-rog-phone-8",
+    "name": "Asus Asus ROG Phone 8",
+    "brand": "Asus",
+    "image": "",
+    "priceGBP": 949,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 80,
+      "batteryScore": 92,
+      "performanceScore": 98,
+      "screenSize": 6.78,
+      "storageGB": 256
+    },
+    "tags": [
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Asus+Asus+ROG+Phone+8"
+      }
+    ]
+  },
+  {
+    "id": "zte-nubia-redmagic-9-pro",
+    "name": "ZTE Nubia RedMagic 9 Pro",
+    "brand": "ZTE",
+    "image": "",
+    "priceGBP": 879,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 80,
+      "batteryScore": 94,
+      "performanceScore": 98,
+      "screenSize": 6.8,
+      "storageGB": 256
+    },
+    "tags": [
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=ZTE+Nubia+RedMagic+9+Pro"
+      }
+    ]
+  },
+  {
+    "id": "honor-honor-magic-6-pro-512gb",
+    "name": "Honor Honor Magic 6 Pro (512GB)",
+    "brand": "Honor",
+    "image": "",
+    "priceGBP": 899,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 92,
+      "batteryScore": 90,
+      "performanceScore": 92,
+      "screenSize": 6.8,
+      "storageGB": 512
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Honor+Honor+Magic+6+Pro+(512GB)"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s23-ultra",
+    "name": "Samsung Galaxy S23 Ultra",
+    "brand": "Samsung",
+    "image": "",
+    "priceGBP": 899,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 96,
+      "batteryScore": 84,
+      "performanceScore": 92,
+      "screenSize": 6.8,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S23+Ultra"
+      }
+    ]
+  },
+  {
+    "id": "motorola-motorola-razr-50-ultra",
+    "name": "Motorola Motorola Razr 50 Ultra",
+    "brand": "Motorola",
+    "image": "",
+    "priceGBP": 999,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 84,
+      "batteryScore": 78,
+      "performanceScore": 90,
+      "screenSize": 6.9,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "social",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Motorola+Motorola+Razr+50+Ultra"
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-xiaomi-14-pro",
+    "name": "Xiaomi Xiaomi 14 Pro",
+    "brand": "Xiaomi",
+    "image": "",
+    "priceGBP": 899,
+    "priceBand": "800-plus",
+    "specs": {
+      "cameraScore": 94,
+      "batteryScore": 85,
+      "performanceScore": 96,
+      "screenSize": 6.73,
+      "storageGB": 256
+    },
+    "tags": [
+      "photography",
+      "gaming",
+      "work"
+    ],
+    "retailers": [
+      {
+        "retailer": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=Xiaomi+Xiaomi+14+Pro"
+      }
     ]
   }
 ]
