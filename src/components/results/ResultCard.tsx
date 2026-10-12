@@ -14,10 +14,19 @@ interface ResultCardProps {
   recommendation: Recommendation;
   rank: number; // 0-based; 0 = top pick
   delay: number;
+  selected: boolean;
+  onToggleCompare: (phoneId: string) => void;
 }
 
-export function ResultCard({ recommendation, rank, delay }: ResultCardProps) {
-  const { phone, matchScore, reasons, unmetConstraints } = recommendation;
+export function ResultCard({
+  recommendation,
+  rank,
+  delay,
+  selected,
+  onToggleCompare,
+}: ResultCardProps) {
+  const { phone, matchScore, reasons, unmetConstraints, tradeoffs } =
+    recommendation;
   const { reduced, fadeInUp } = useFriendlyMotion();
   const isTop = rank === 0;
   const buyLink = phone.retailers[0];
@@ -85,11 +94,37 @@ export function ResultCard({ recommendation, rank, delay }: ResultCardProps) {
           <dd>💾 {phone.specs.storageGB}GB</dd>
         </dl>
 
+        {tradeoffs && tradeoffs.length > 0 && (
+          <div className="mb-3">
+            <p className="text-xs font-semibold text-ink-soft mb-1">
+              Worth knowing:
+            </p>
+            <ul className="space-y-1 text-xs text-ink-soft">
+              {tradeoffs.map((t) => (
+                <li key={t} className="flex gap-2">
+                  <span aria-hidden="true">•</span>
+                  <span>{t}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {unmetConstraints && unmetConstraints.length > 0 && (
           <p className="text-xs text-ink-soft mb-3">
             ⚠️ {unmetConstraints.join(' · ')}
           </p>
         )}
+
+        <label className="flex items-center gap-2 text-sm text-ink-soft mb-3 cursor-pointer select-none">
+          <input
+            type="checkbox"
+            checked={selected}
+            onChange={() => onToggleCompare(phone.id)}
+            className="w-4 h-4 accent-[color:var(--color-primary)]"
+          />
+          Compare this phone
+        </label>
 
         <div className="mt-auto">
           {hasLink && buyLink ? (

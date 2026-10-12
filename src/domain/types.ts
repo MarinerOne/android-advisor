@@ -73,6 +73,8 @@ export interface Recommendation {
   reasons: string[];
   /** Notes where a soft constraint could not be fully met, e.g. budget. */
   unmetConstraints?: string[];
+  /** Honest tradeoffs / weaker points, for "why not" transparency. */
+  tradeoffs?: string[];
 }
 
 /** Known question ids, kept in one place so logic and config stay in sync. */
