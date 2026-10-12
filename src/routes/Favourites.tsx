@@ -4,6 +4,7 @@ import { Button } from '../components/common/Button';
 import { PhoneTile } from '../components/browse/PhoneTile';
 import { useFavourites } from '../state/favourites';
 import { getPhones } from '../data/phonesRepository';
+import { Seo } from '../seo/Seo';
 
 export function Favourites() {
   const navigate = useNavigate();
@@ -19,6 +20,7 @@ export function Favourites() {
 
   return (
     <div className="flex-1 py-6">
+      <Seo title="Your shortlist" path="/favourites" noindex />
       <h1 className="text-3xl font-bold text-ink mb-5">Your shortlist ❤️</h1>
 
       {phones.length === 0 ? (

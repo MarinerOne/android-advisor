@@ -57,6 +57,25 @@ npm run data:images
 When no real image is set for a phone, the app renders a clean branded SVG
 placeholder, so the UI always looks intentional with or without photos.
 
+## SEO & static site generation
+
+The site is pre-rendered to static HTML with `vite-react-ssg`. `npm run build`
+generates a crawlable HTML file for every route — home, browse, and all 100
+phone detail pages — each with its own `<title>`, meta description, canonical
+URL, Open Graph/Twitter tags, and (on phone pages) `Product` JSON-LD structured
+data. `scripts/generateSitemap.mjs` writes `public/sitemap.xml` as part of the
+build; `public/robots.txt` points crawlers at it.
+
+Canonical domain: `https://androidadvisor.net` (configured in `src/seo/site.ts`).
+
+### Hosting requirement
+
+Routing uses clean URLs (`/browse`, `/phone/<id>`). The pre-rendered pages are
+real files, so direct hits and crawlers work out of the box. For client-side
+navigation to unknown paths, configure the host to fall back to the matching
+pre-rendered file (most static hosts like Netlify/Vercel/Cloudflare Pages serve
+`dist/` with sensible defaults; a SPA fallback to `/index.html` covers the rest).
+
 ## Notes
 
 - Retailer links use stable Amazon UK search URLs that resolve in the UK and are

@@ -4,6 +4,8 @@ import { Button } from '../components/common/Button';
 import { useFriendlyMotion } from '../components/common/motion';
 import { useApp } from '../state/AppContext';
 import { track } from '../analytics/analytics';
+import { Seo } from '../seo/Seo';
+import { SITE } from '../seo/site';
 
 export function Landing() {
   const navigate = useNavigate();
@@ -21,6 +23,17 @@ export function Landing() {
       {...fadeInUp}
       className="flex-1 flex flex-col items-center justify-center text-center py-10"
     >
+      <Seo
+        title={SITE.name}
+        description="Find the best Android phone for you with a quick, friendly quiz. Compare 100+ phones by budget, camera, battery and more. Free, no sign-up."
+        path="/"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: SITE.name,
+          url: SITE.url,
+        }}
+      />
       <div className="text-6xl mb-4" aria-hidden="true">
         📱✨
       </div>

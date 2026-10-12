@@ -4,8 +4,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // Relative base so the static bundle also works inside a native WebView wrapper.
-  base: './',
+  // Absolute base for clean, indexable URLs (SSG). The native wrapper can be
+  // configured to serve from the app root.
+  base: '/',
   test: {
     globals: true,
     environment: 'jsdom',

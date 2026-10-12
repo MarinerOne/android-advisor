@@ -13,6 +13,7 @@ import { decodeAnswers } from '../domain/share';
 import { QUESTION_IDS } from '../domain/types';
 import { DETAILED_QUESTIONS } from '../domain/quiz.config';
 import { track } from '../analytics/analytics';
+import { Seo } from '../seo/Seo';
 
 export function Results() {
   const navigate = useNavigate();
@@ -86,6 +87,7 @@ export function Results() {
 
   return (
     <div className="flex-1 py-6">
+      <Seo title="Your matches" path="/results" noindex />
       <motion.div {...fadeInUp} className="text-center mb-8">
         <div className="text-5xl mb-3" aria-hidden="true">
           🎉

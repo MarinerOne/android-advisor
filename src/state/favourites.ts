@@ -13,9 +13,14 @@ const STORAGE_KEY = 'android-advisor:favourites';
 // A simple event target so all hook instances stay in sync within a tab.
 const listeners = new Set<() => void>();
 
+// SSR-safe: there is no localStorage/window during static generation.
+const hasStorage = (): boolean =>
+  typeof window !== 'undefined' && typeof window.localStorage !== 'undefined';
+
 function read(): string[] {
+  if (!hasStorage()) return [];
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = window.localStorage.getItem(STORAGE_KEY);
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     return Array.isArray(parsed) ? parsed.filter((x) => typeof x === 'string') : [];
@@ -25,21 +30,25 @@ function read(): string[] {
 }
 
 function write(ids: string[]): void {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(ids));
-  } catch {
-    // Storage may be unavailable (private mode / quota) — fail quietly.
+  if (hasStorage()) {
+    try {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(ids));
+    } catch {
+      // Storage may be unavailable (private mode / quota) — fail quietly.
+    }
   }
   listeners.forEach((fn) => fn());
 }
 
 export function useFavourites() {
-  const [ids, setIds] = useState<string[]>(() => read());
+  // Start empty so server-rendered HTML and first client render match, then
+  // hydrate from storage in an effect to avoid a hydration mismatch.
+  const [ids, setIds] = useState<string[]>([]);
 
   useEffect(() => {
+    setIds(read());
     const sync = () => setIds(read());
     listeners.add(sync);
-    // Also sync across tabs/windows.
     window.addEventListener('storage', sync);
     return () => {
       listeners.delete(sync);
