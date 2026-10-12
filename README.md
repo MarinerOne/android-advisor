@@ -72,9 +72,38 @@ Canonical domain: `https://androidadvisor.net` (configured in `src/seo/site.ts`)
 
 Routing uses clean URLs (`/browse`, `/phone/<id>`). The pre-rendered pages are
 real files, so direct hits and crawlers work out of the box. For client-side
-navigation to unknown paths, configure the host to fall back to the matching
-pre-rendered file (most static hosts like Netlify/Vercel/Cloudflare Pages serve
-`dist/` with sensible defaults; a SPA fallback to `/index.html` covers the rest).
+navigation to unknown paths, the host needs a fallback to `/index.html`.
+
+## Deploying to AWS Amplify Hosting
+
+1. In the Amplify console, connect this GitHub repo and pick the `main` branch.
+   Amplify detects `amplify.yml` in the repo root and uses it for the build.
+   (Build command `npm run build`, output directory `dist`.)
+
+2. **Add the rewrite rule.** This is required and is NOT read from the repo —
+   set it in the console under *Hosting → Rewrites and redirects*. Use the rule
+   in `deploy/amplify-redirects.json`:
+
+   - Source: the regex in that file (matches only paths that are not real
+     files with a known extension)
+   - Target: `/index.html`
+   - Type: `200 (Rewrite)`
+
+   This matters because this is a **pre-rendered** site, not a plain SPA. A
+   blanket `/<*>` → `/index.html` rule would serve the home page for every URL
+   and defeat the SEO work. The provided rule lets the per-page `.html` files,
+   `sitemap.xml`, `robots.txt`, assets, etc. serve directly, and only falls back
+   to the app shell for extension-less client-side routes.
+
+3. **Custom domain.** Add `androidadvisor.net` under *Hosting → Custom domains*
+   and follow Amplify's DNS steps. The canonical URLs already point here
+   (`src/seo/site.ts`).
+
+4. **Build-time secrets (optional).** The Amazon image fetch is a local/manual
+   step and is not part of the Amplify build. If you later want images fetched
+   during the Amplify build, add `PAAPI_ACCESS_KEY`, `PAAPI_SECRET_KEY`, and
+   `PAAPI_PARTNER_TAG` as environment variables in the Amplify console (never in
+   the repo) and add `npm run data:images` to the build phase in `amplify.yml`.
 
 ## Notes
 

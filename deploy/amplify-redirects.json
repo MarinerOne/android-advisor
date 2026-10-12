@@ -1,0 +1,8 @@
+[
+  {
+    "comment": "Serve real files (assets, pre-rendered .html, sitemap, robots, favicon) as-is. Only fall back to the SPA shell for routes that are NOT a file with an extension. This keeps per-page pre-rendered HTML intact for crawlers while supporting client-side navigation.",
+    "source": "</^[^.]+$|\\.(?!(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json|webp|xml|html)$)([^.]+$)/>",
+    "target": "/index.html",
+    "status": "200"
+  }
+]
