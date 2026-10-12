@@ -52,6 +52,7 @@ interface ScoredPhone {
   budgetGap: number; // 0 = within budget band
   reasons: string[];
   unmetConstraints: string[];
+  tradeoffs: string[];
 }
 
 function scorePhone(phone: Phone, answers: QuizAnswers): ScoredPhone {
@@ -148,7 +149,42 @@ function scorePhone(phone: Phone, answers: QuizAnswers): ScoredPhone {
     }
   }
 
-  return { phone, rawScore: score, budgetGap, reasons, unmetConstraints };
+  const tradeoffs = findTradeoffs(phone, answers);
+
+  return { phone, rawScore: score, budgetGap, reasons, unmetConstraints, tradeoffs };
+}
+
+/**
+ * Honest weaker points about a phone, phrased gently. Used for "why not the
+ * others?" transparency so users understand the compromises of each pick.
+ */
+function findTradeoffs(phone: Phone, answers: QuizAnswers): string[] {
+  const tradeoffs: string[] = [];
+  const cameraImp = answers[QUESTION_IDS.camera] as Importance | undefined;
+  const batteryImp = answers[QUESTION_IDS.battery] as Importance | undefined;
+
+  if (phone.specs.cameraScore < 60) {
+    tradeoffs.push(
+      cameraImp === 'high'
+        ? 'Camera is only average, despite your love of photos'
+        : 'Camera is fairly basic',
+    );
+  }
+  if (phone.specs.batteryScore < 65) {
+    tradeoffs.push(
+      batteryImp === 'high'
+        ? 'Battery life is middling for a heavy user'
+        : 'Battery is average',
+    );
+  }
+  if (phone.specs.performanceScore < 55) {
+    tradeoffs.push('Not built for heavy multitasking or demanding games');
+  }
+  if (phone.specs.storageGB <= 64) {
+    tradeoffs.push('Storage fills up quickly if you keep lots of media');
+  }
+
+  return tradeoffs.slice(0, 2);
 }
 
 function reasonForUse(use: string): string {
@@ -206,6 +242,9 @@ export function recommend(
     };
     if (s.unmetConstraints.length > 0) {
       rec.unmetConstraints = s.unmetConstraints;
+    }
+    if (s.tradeoffs.length > 0) {
+      rec.tradeoffs = s.tradeoffs;
     }
     return rec;
   });

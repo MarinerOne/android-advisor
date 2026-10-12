@@ -3,7 +3,7 @@
     "id": "moto-g24",
     "name": "Motorola Moto G24",
     "brand": "Motorola",
-    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&q=70",
+    "image": "",
     "priceGBP": 109,
     "priceBand": "under-200",
     "specs": {
@@ -22,7 +22,7 @@
     "id": "samsung-a15",
     "name": "Samsung Galaxy A15",
     "brand": "Samsung",
-    "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&q=70",
+    "image": "",
     "priceGBP": 149,
     "priceBand": "under-200",
     "specs": {
@@ -41,7 +41,7 @@
     "id": "moto-g54",
     "name": "Motorola Moto G54",
     "brand": "Motorola",
-    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&q=70",
+    "image": "",
     "priceGBP": 199,
     "priceBand": "under-200",
     "specs": {
@@ -60,7 +60,7 @@
     "id": "pixel-7a",
     "name": "Google Pixel 7a",
     "brand": "Google",
-    "image": "https://images.unsplash.com/photo-1662947995689-ec5165b1f94c?w=600&q=70",
+    "image": "",
     "priceGBP": 349,
     "priceBand": "200-400",
     "specs": {
@@ -79,7 +79,7 @@
     "id": "samsung-a55",
     "name": "Samsung Galaxy A55",
     "brand": "Samsung",
-    "image": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=600&q=70",
+    "image": "",
     "priceGBP": 389,
     "priceBand": "200-400",
     "specs": {
@@ -98,7 +98,7 @@
     "id": "nothing-phone-2a",
     "name": "Nothing Phone (2a)",
     "brand": "Nothing",
-    "image": "https://images.unsplash.com/photo-1706412521907-1c9f5c6f0a2a?w=600&q=70",
+    "image": "",
     "priceGBP": 319,
     "priceBand": "200-400",
     "specs": {
@@ -117,7 +117,7 @@
     "id": "pixel-8",
     "name": "Google Pixel 8",
     "brand": "Google",
-    "image": "https://images.unsplash.com/photo-1696423984554-3d4c6c6c3f5d?w=600&q=70",
+    "image": "",
     "priceGBP": 499,
     "priceBand": "400-600",
     "specs": {
@@ -136,7 +136,7 @@
     "id": "oneplus-12r",
     "name": "OnePlus 12R",
     "brand": "OnePlus",
-    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&q=70",
+    "image": "",
     "priceGBP": 549,
     "priceBand": "400-600",
     "specs": {
@@ -155,7 +155,7 @@
     "id": "samsung-s24-fe",
     "name": "Samsung Galaxy S24 FE",
     "brand": "Samsung",
-    "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&q=70",
+    "image": "",
     "priceGBP": 599,
     "priceBand": "400-600",
     "specs": {
@@ -174,7 +174,7 @@
     "id": "pixel-8-pro",
     "name": "Google Pixel 8 Pro",
     "brand": "Google",
-    "image": "https://images.unsplash.com/photo-1696423984554-3d4c6c6c3f5d?w=600&q=70",
+    "image": "",
     "priceGBP": 699,
     "priceBand": "600-800",
     "specs": {
@@ -193,7 +193,7 @@
     "id": "oneplus-12",
     "name": "OnePlus 12",
     "brand": "OnePlus",
-    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&q=70",
+    "image": "",
     "priceGBP": 749,
     "priceBand": "600-800",
     "specs": {
@@ -212,7 +212,7 @@
     "id": "samsung-s24",
     "name": "Samsung Galaxy S24",
     "brand": "Samsung",
-    "image": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=600&q=70",
+    "image": "",
     "priceGBP": 799,
     "priceBand": "600-800",
     "specs": {
@@ -231,7 +231,7 @@
     "id": "samsung-s24-ultra",
     "name": "Samsung Galaxy S24 Ultra",
     "brand": "Samsung",
-    "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&q=70",
+    "image": "",
     "priceGBP": 1249,
     "priceBand": "800-plus",
     "specs": {
@@ -250,7 +250,7 @@
     "id": "pixel-9-pro",
     "name": "Google Pixel 9 Pro",
     "brand": "Google",
-    "image": "https://images.unsplash.com/photo-1696423984554-3d4c6c6c3f5d?w=600&q=70",
+    "image": "",
     "priceGBP": 999,
     "priceBand": "800-plus",
     "specs": {
@@ -269,7 +269,7 @@
     "id": "xiaomi-14",
     "name": "Xiaomi 14",
     "brand": "Xiaomi",
-    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&q=70",
+    "image": "",
     "priceGBP": 849,
     "priceBand": "800-plus",
     "specs": {

@@ -40,7 +40,8 @@ export type QuizAction =
   | { type: 'BACK' }
   | { type: 'SEE_RESULTS' }
   | { type: 'REFINE' }
-  | { type: 'RESTART' };
+  | { type: 'RESTART' }
+  | { type: 'LOAD_SHARED'; answers: QuizAnswers };
 
 export function activeQuestions(phase: QuizPhase) {
   if (phase === 'detailed') return DETAILED_QUESTIONS;
@@ -108,6 +109,14 @@ export function quizReducer(state: AppState, action: QuizAction): AppState {
 
     case 'RESTART':
       return { ...initialState };
+
+    case 'LOAD_SHARED':
+      // Jump straight to results from a shared link, answers preloaded.
+      return {
+        ...initialState,
+        phase: 'results',
+        answers: action.answers,
+      };
 
     default:
       return state;

@@ -1,5 +1,6 @@
 import rawPhones from './phones.json';
 import type { Phone, PriceBand } from '../domain/types';
+import { phoneImageDataUri } from './phoneImage';
 
 /**
  * Loads and validates the bundled phone catalogue. Malformed entries are
@@ -46,7 +47,11 @@ export function getPhones(): Phone[] {
   const valid: Phone[] = [];
   for (const entry of rawPhones as unknown[]) {
     if (isValidPhone(entry)) {
-      valid.push(entry);
+      // Fall back to a clean branded placeholder when no real image is set.
+      const phone: Phone = entry.image
+        ? entry
+        : { ...entry, image: phoneImageDataUri(entry) };
+      valid.push(phone);
     } else {
       // eslint-disable-next-line no-console
       console.error('Skipping malformed phone entry in catalogue:', entry);
