@@ -30,6 +30,7 @@ export function ResultCard({
   const { reduced, fadeInUp } = useFriendlyMotion();
   const isTop = rank === 0;
   const buyLink = phone.retailers[0];
+  const otherLinks = phone.retailers.slice(1).filter((l) => Boolean(l.url));
   const hasLink = hasUsableRetailerLink(phone.retailers);
 
   return (
@@ -128,14 +129,34 @@ export function ResultCard({
 
         <div className="mt-auto">
           {hasLink && buyLink ? (
-            <a
-              href={resolveRetailerLink(buyLink)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-center w-full rounded-pill bg-primary text-primary-ink font-bold px-4 py-3 transition-all duration-fast hover:shadow-lift hover:-translate-y-0.5"
-            >
-              Buy at {buyLink.retailer} →
-            </a>
+            <>
+              <a
+                href={resolveRetailerLink(buyLink)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center w-full rounded-pill bg-primary text-primary-ink font-bold px-4 py-3 transition-all duration-fast hover:shadow-lift hover:-translate-y-0.5"
+              >
+                Buy at {buyLink.retailer} →
+              </a>
+              {otherLinks.length > 0 && (
+                <p className="text-center text-sm text-ink-soft mt-2">
+                  Also at{' '}
+                  {otherLinks.map((link, idx) => (
+                    <span key={link.retailer}>
+                      {idx > 0 && ', '}
+                      <a
+                        href={resolveRetailerLink(link)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-primary underline underline-offset-2 hover:no-underline"
+                      >
+                        {link.retailer}
+                      </a>
+                    </span>
+                  ))}
+                </p>
+              )}
+            </>
           ) : (
             <button
               disabled
