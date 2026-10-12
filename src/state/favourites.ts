@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import { track } from '../analytics/analytics';
 
 /**
  * Favourites / shortlist, persisted in localStorage so it survives reloads
@@ -48,10 +49,10 @@ export function useFavourites() {
 
   const toggle = useCallback((id: string) => {
     const current = read();
-    const next = current.includes(id)
-      ? current.filter((x) => x !== id)
-      : [...current, id];
+    const added = !current.includes(id);
+    const next = added ? [...current, id] : current.filter((x) => x !== id);
     write(next);
+    track({ name: 'favourite_toggled', props: { phoneId: id, added } });
   }, []);
 
   const isFavourite = useCallback((id: string) => ids.includes(id), [ids]);

@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from '../components/common/Button';
@@ -10,6 +10,7 @@ import { useFriendlyMotion } from '../components/common/motion';
 import { getPhoneById, getPhones } from '../data/phonesRepository';
 import { resolveRetailerLink } from '../data/affiliate';
 import { PRICE_BAND_LABELS, type Phone } from '../domain/types';
+import { track } from '../analytics/analytics';
 
 const SPEC_BARS: { label: string; key: keyof Phone['specs'] }[] = [
   { label: 'Camera', key: 'cameraScore' },
@@ -23,6 +24,15 @@ export function PhoneDetail() {
   const { fadeInUp } = useFriendlyMotion();
 
   const phone = useMemo(() => (id ? getPhoneById(id) : undefined), [id]);
+
+  useEffect(() => {
+    if (phone) {
+      track({
+        name: 'phone_viewed',
+        props: { phoneId: phone.id, phoneName: phone.name },
+      });
+    }
+  }, [phone]);
 
   const similar = useMemo(() => {
     if (!phone) return [];
@@ -145,6 +155,18 @@ export function PhoneDetail() {
                   href={resolveRetailerLink(link)}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() =>
+                    track({
+                      name: 'buy_click',
+                      props: {
+                        phoneId: phone.id,
+                        phoneName: phone.name,
+                        retailer: link.retailer,
+                        priceGBP: phone.priceGBP,
+                        source: 'detail',
+                      },
+                    })
+                  }
                   className={
                     'block text-center w-full rounded-pill font-bold px-4 py-3 transition-all duration-fast hover:-translate-y-0.5 ' +
                     (i === 0

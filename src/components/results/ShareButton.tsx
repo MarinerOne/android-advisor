@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from '../common/Button';
 import { buildShareUrl } from '../../domain/share';
 import type { QuizAnswers } from '../../domain/types';
+import { track } from '../../analytics/analytics';
 
 interface ShareButtonProps {
   answers: QuizAnswers;
@@ -11,6 +12,7 @@ export function ShareButton({ answers }: ShareButtonProps) {
   const [copied, setCopied] = useState(false);
 
   async function share() {
+    track({ name: 'results_shared' });
     const url = buildShareUrl(answers);
 
     // Prefer the native share sheet on supported devices (great for mobile).

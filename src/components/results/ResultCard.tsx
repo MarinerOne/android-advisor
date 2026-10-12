@@ -6,6 +6,8 @@ import { Card } from '../common/Card';
 import { FavouriteButton } from '../common/FavouriteButton';
 import { AffiliateNote } from '../common/AffiliateNote';
 import { useFriendlyMotion } from '../common/motion';
+import { track } from '../../analytics/analytics';
+import type { RetailerLink } from '../../domain/types';
 
 const FALLBACK_IMAGE =
   'data:image/svg+xml;utf8,' +
@@ -34,6 +36,20 @@ export function ResultCard({
   const isTop = rank === 0;
   const buyLink = phone.retailers[0];
   const otherLinks = phone.retailers.slice(1).filter((l) => Boolean(l.url));
+
+  function trackBuy(link: RetailerLink) {
+    track({
+      name: 'buy_click',
+      props: {
+        phoneId: phone.id,
+        phoneName: phone.name,
+        retailer: link.retailer,
+        priceGBP: phone.priceGBP,
+        source: 'results',
+        matchRank: rank + 1,
+      },
+    });
+  }
   const hasLink = hasUsableRetailerLink(phone.retailers);
 
   return (
@@ -146,6 +162,7 @@ export function ResultCard({
                 href={resolveRetailerLink(buyLink)}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackBuy(buyLink)}
                 className="block text-center w-full rounded-pill bg-primary text-primary-ink font-bold px-4 py-3 transition-all duration-fast hover:shadow-lift hover:-translate-y-0.5"
               >
                 Buy at {buyLink.retailer} →
@@ -160,6 +177,7 @@ export function ResultCard({
                         href={resolveRetailerLink(link)}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => trackBuy(link)}
                         className="font-semibold text-primary underline underline-offset-2 hover:no-underline"
                       >
                         {link.retailer}

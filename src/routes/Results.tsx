@@ -11,6 +11,8 @@ import { getPhones } from '../data/phonesRepository';
 import { recommend } from '../domain/scoring';
 import { decodeAnswers } from '../domain/share';
 import { QUESTION_IDS } from '../domain/types';
+import { DETAILED_QUESTIONS } from '../domain/quiz.config';
+import { track } from '../analytics/analytics';
 
 export function Results() {
   const navigate = useNavigate();
@@ -42,6 +44,21 @@ export function Results() {
     [state.answers],
   );
 
+  // Fire quiz_completed + results_viewed once per distinct set of answers.
+  useEffect(() => {
+    if (!hasCoreAnswers) return;
+    const answered = Object.keys(state.answers).length;
+    const refined = DETAILED_QUESTIONS.some(
+      (q) => state.answers[q.id] !== undefined,
+    );
+    track({ name: 'quiz_completed', props: { refined, answered } });
+    track({
+      name: 'results_viewed',
+      props: { count: recommendations.length, shared: Boolean(sharedParam) },
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hasCoreAnswers, state.answers]);
+
   if (!hasCoreAnswers) return null;
 
   function toggleCompare(phoneId: string) {
@@ -53,6 +70,7 @@ export function Results() {
   }
 
   function restart() {
+    track({ name: 'quiz_restarted' });
     dispatch({ type: 'RESTART' });
     navigate('/', { replace: true });
   }
