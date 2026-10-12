@@ -44,8 +44,13 @@ export function Layout({ children, wide = false }: LayoutProps) {
       >
         {children}
       </main>
-      <footer className="w-full py-4 px-5 text-center text-sm text-ink-soft">
-        Helping you find your perfect Android phone.
+      <footer className="w-full py-5 px-5 text-center text-sm text-ink-soft border-t border-border">
+        <p className="mb-1">Helping you find your perfect Android phone.</p>
+        <p className="max-w-2xl mx-auto text-xs">
+          As an Amazon Associate we earn from qualifying purchases. Some links
+          on this site are affiliate links, which means we may receive a
+          commission at no extra cost to you.
+        </p>
       </footer>
     </div>
   );

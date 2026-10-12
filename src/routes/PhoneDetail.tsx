@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from '../components/common/Button';
 import { Card } from '../components/common/Card';
 import { FavouriteButton } from '../components/common/FavouriteButton';
+import { AffiliateNote } from '../components/common/AffiliateNote';
 import { PhoneTile } from '../components/browse/PhoneTile';
 import { useFriendlyMotion } from '../components/common/motion';
 import { getPhoneById, getPhones } from '../data/phonesRepository';
@@ -154,6 +155,9 @@ export function PhoneDetail() {
                   Buy at {link.retailer} →
                 </a>
               ))}
+            {phone.retailers.some((r) => r.url) && (
+              <AffiliateNote className="pt-1" />
+            )}
           </div>
         </div>
       </div>
