@@ -8,7 +8,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "data:generate": "node scripts/generatePhones.mjs",
+    "data:images": "node scripts/fetchAmazonImages.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.11.0",
