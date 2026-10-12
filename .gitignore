@@ -5,3 +5,8 @@ dist-ssr
 .DS_Store
 .vite
 coverage
+
+# Secrets — never commit credentials (e.g. Amazon PA API keys)
+.env
+.env.*
+!.env.example
