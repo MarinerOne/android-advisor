@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/common/Button';
 import { useFriendlyMotion } from '../components/common/motion';
 import { useApp } from '../state/AppContext';
+import { track } from '../analytics/analytics';
 
 export function Landing() {
   const navigate = useNavigate();
@@ -10,6 +11,7 @@ export function Landing() {
   const { fadeInUp } = useFriendlyMotion();
 
   function start() {
+    track({ name: 'quiz_started' });
     dispatch({ type: 'START' });
     navigate('/quiz');
   }

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/common/Button';
 import { PhoneTile } from '../components/browse/PhoneTile';
@@ -8,6 +8,7 @@ import {
   getTags,
 } from '../data/phonesRepository';
 import { PRICE_BAND_LABELS, type PriceBand } from '../domain/types';
+import { track } from '../analytics/analytics';
 
 type SortKey = 'price-asc' | 'price-desc' | 'name' | 'brand';
 
@@ -29,6 +30,32 @@ export function Browse() {
   const [band, setBand] = useState<PriceBand | 'all'>('all');
   const [tag, setTag] = useState('all');
   const [sort, setSort] = useState<SortKey>('price-asc');
+
+  // Track the page view once.
+  useEffect(() => {
+    track({ name: 'browse_viewed' });
+  }, []);
+
+  // Track searches, debounced so we don't fire on every keystroke.
+  useEffect(() => {
+    const q = search.trim();
+    if (!q) return;
+    const t = setTimeout(() => {
+      track({ name: 'browse_searched', props: { query: q } });
+    }, 600);
+    return () => clearTimeout(t);
+  }, [search]);
+
+  // Track filter/sort changes (not the initial default state).
+  useEffect(() => {
+    if (brand === 'all' && band === 'all' && tag === 'all' && sort === 'price-asc') {
+      return;
+    }
+    track({
+      name: 'browse_filtered',
+      props: { brand, band, tag, sort },
+    });
+  }, [brand, band, tag, sort]);
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
