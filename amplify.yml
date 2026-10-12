@@ -1,0 +1,20 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        # Use a clean, reproducible install from the lockfile.
+        - npm ci
+    build:
+      commands:
+        # Generates the sitemap, type-checks, and pre-renders every route
+        # (home, browse, and all phone pages) to static HTML.
+        - npm run build
+  artifacts:
+    # vite-react-ssg outputs the static site to dist/.
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
