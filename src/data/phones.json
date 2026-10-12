@@ -15,7 +15,7 @@
     },
     "tags": ["basics", "value", "social"],
     "retailers": [
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=motorola+moto+g24", "isPlaceholder": true }
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+G24" }
     ]
   },
   {
@@ -34,7 +34,7 @@
     },
     "tags": ["basics", "social", "value"],
     "retailers": [
-      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-a/galaxy-a15-blue-black-128gb-sm-a155fzkeeub/" }
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A15" }
     ]
   },
   {
@@ -53,7 +53,7 @@
     },
     "tags": ["value", "social", "basics"],
     "retailers": [
-      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=motorola+moto+g54", "isPlaceholder": true }
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Motorola+Moto+G54" }
     ]
   },
   {
@@ -72,7 +72,8 @@
     },
     "tags": ["photography", "social"],
     "retailers": [
-      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_7a" }
+      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_7a" },
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Google+Pixel+7a" }
     ]
   },
   {
@@ -91,7 +92,7 @@
     },
     "tags": ["social", "photography", "value"],
     "retailers": [
-      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-a/galaxy-a55-5g-awesome-navy-128gb-sm-a556blvbeub/" }
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+A55+5G" }
     ]
   },
   {
@@ -110,7 +111,7 @@
     },
     "tags": ["social", "value", "gaming"],
     "retailers": [
-      { "retailer": "Nothing", "url": "https://uk.nothing.tech/products/phone-2a" }
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Nothing+Phone+2a" }
     ]
   },
   {
@@ -129,7 +130,8 @@
     },
     "tags": ["photography", "work", "social"],
     "retailers": [
-      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_8" }
+      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_8" },
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Google+Pixel+8" }
     ]
   },
   {
@@ -148,7 +150,7 @@
     },
     "tags": ["gaming", "work", "social"],
     "retailers": [
-      { "retailer": "OnePlus UK", "url": "https://www.oneplus.com/uk/oneplus-12r" }
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=OnePlus+12R" }
     ]
   },
   {
@@ -167,7 +169,8 @@
     },
     "tags": ["photography", "gaming", "work"],
     "retailers": [
-      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24-fe/", "isPlaceholder": true }
+      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24-fe/" },
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S24+FE" }
     ]
   },
   {
@@ -186,7 +189,8 @@
     },
     "tags": ["photography", "work", "gaming"],
     "retailers": [
-      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_8_pro" }
+      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_8_pro" },
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Google+Pixel+8+Pro" }
     ]
   },
   {
@@ -205,7 +209,8 @@
     },
     "tags": ["gaming", "photography", "work"],
     "retailers": [
-      { "retailer": "OnePlus UK", "url": "https://www.oneplus.com/uk/oneplus-12" }
+      { "retailer": "OnePlus UK", "url": "https://www.oneplus.com/uk/oneplus-12" },
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=OnePlus+12" }
     ]
   },
   {
@@ -224,7 +229,8 @@
     },
     "tags": ["photography", "work", "gaming", "social"],
     "retailers": [
-      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24/" }
+      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24/" },
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S24" }
     ]
   },
   {
@@ -243,7 +249,8 @@
     },
     "tags": ["photography", "gaming", "work"],
     "retailers": [
-      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24-ultra/" }
+      { "retailer": "Samsung UK", "url": "https://www.samsung.com/uk/smartphones/galaxy-s24-ultra/" },
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Samsung+Galaxy+S24+Ultra" }
     ]
   },
   {
@@ -262,7 +269,8 @@
     },
     "tags": ["photography", "work", "gaming"],
     "retailers": [
-      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_9_pro" }
+      { "retailer": "Google Store", "url": "https://store.google.com/gb/product/pixel_9_pro" },
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Google+Pixel+9+Pro" }
     ]
   },
   {
@@ -281,7 +289,7 @@
     },
     "tags": ["photography", "gaming", "work"],
     "retailers": [
-      { "retailer": "Xiaomi UK", "url": "https://www.mi.com/uk/product/xiaomi-14/", "isPlaceholder": true }
+      { "retailer": "Amazon UK", "url": "https://www.amazon.co.uk/s?k=Xiaomi+14" }
     ]
   }
 ]
