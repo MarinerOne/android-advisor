@@ -61,3 +61,20 @@ export function getPhones(): Phone[] {
   cache = valid;
   return valid;
 }
+
+/** Look up a single phone by id, or undefined if not found. */
+export function getPhoneById(id: string): Phone | undefined {
+  return getPhones().find((p) => p.id === id);
+}
+
+/** All distinct brands in the catalogue, alphabetically sorted. */
+export function getBrands(): string[] {
+  return [...new Set(getPhones().map((p) => p.brand))].sort();
+}
+
+/** All distinct tags in the catalogue, alphabetically sorted. */
+export function getTags(): string[] {
+  const tags = new Set<string>();
+  for (const p of getPhones()) p.tags.forEach((t) => tags.add(t));
+  return [...tags].sort();
+}
