@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <!-- Per-page <title> and meta tags are injected by the Seo component. -->
+
+    <!-- Privacy-friendly analytics by Plausible (cookieless; auto-tracks
+         pageviews including SPA navigations via plausible.init). Custom events
+         are sent through window.plausible from the app's analytics layer. -->
+    <script async src="https://plausible.io/js/pa-i-5I4L5TBYsSvgNtNwZPn.js"></script>
+    <script>
+      window.plausible =
+        window.plausible ||
+        function () {
+          (plausible.q = plausible.q || []).push(arguments);
+        };
+      plausible.init = plausible.init || function (i) { plausible.o = i || {}; };
+      plausible.init();
+    </script>
   </head>
   <body>
     <div id="root"></div>
