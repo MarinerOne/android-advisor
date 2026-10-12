@@ -105,6 +105,15 @@ navigation to unknown paths, the host needs a fallback to `/index.html`.
    `PAAPI_PARTNER_TAG` as environment variables in the Amplify console (never in
    the repo) and add `npm run data:images` to the build phase in `amplify.yml`.
 
+## Analytics
+
+Plausible (cookieless, no consent banner needed) is loaded in `index.html` and
+auto-tracks pageviews. The app also sends typed custom events (defined in
+`src/analytics/events.ts`) — e.g. `buy_click`, `quiz_completed`. To surface
+these in Plausible, add them as custom event goals: see
+[`docs/plausible-goals.md`](docs/plausible-goals.md) for the full list and
+setup steps.
+
 ## Notes
 
 - Retailer links use stable Amazon UK search URLs that resolve in the UK and are
