@@ -8,11 +8,14 @@ import type { RetailerLink } from '../domain/types';
  * function — no UI or recommendation code changes required (Req 10.3, 10.6).
  */
 
-// Future: populate from a config file / remote config.
-// e.g. { "Amazon UK": { param: "tag", value: "androidadvisor-21" } }
+// Per-retailer referral config. Adding a retailer's tag here makes every
+// link to that retailer carry the referral parameter — no UI changes needed.
 type AffiliateConfig = Record<string, { param: string; value: string }>;
 
-const affiliateConfig: AffiliateConfig = {};
+const affiliateConfig: AffiliateConfig = {
+  // Amazon UK Associates tag. For Amazon, the referral parameter is `tag`.
+  'Amazon UK': { param: 'tag', value: 'androidadviso-21' },
+};
 
 export function resolveRetailerLink(link: RetailerLink): string {
   const rule = affiliateConfig[link.retailer];
