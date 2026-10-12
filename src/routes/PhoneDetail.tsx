@@ -11,6 +11,7 @@ import { getPhoneById, getPhones } from '../data/phonesRepository';
 import { resolveRetailerLink } from '../data/affiliate';
 import { PRICE_BAND_LABELS, type Phone } from '../domain/types';
 import { track } from '../analytics/analytics';
+import { Seo } from '../seo/Seo';
 
 const SPEC_BARS: { label: string; key: keyof Phone['specs'] }[] = [
   { label: 'Camera', key: 'cameraScore' },
@@ -50,6 +51,11 @@ export function PhoneDetail() {
   if (!phone) {
     return (
       <div className="flex-1 flex flex-col items-center justify-center text-center py-16">
+        <Seo
+          title="Phone not found"
+          path={`/phone/${id ?? ''}`}
+          noindex
+        />
         <div className="text-4xl mb-3" aria-hidden="true">
           🤔
         </div>
@@ -64,8 +70,28 @@ export function PhoneDetail() {
 
   const bandLabel = PRICE_BAND_LABELS.find((b) => b.band === phone.priceBand)?.label;
 
+  const productJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: phone.name,
+    brand: { '@type': 'Brand', name: phone.brand },
+    category: 'Smartphone',
+    offers: {
+      '@type': 'Offer',
+      price: phone.priceGBP,
+      priceCurrency: 'GBP',
+      availability: 'https://schema.org/InStock',
+    },
+  };
+
   return (
     <motion.div {...fadeInUp} className="flex-1 py-6">
+      <Seo
+        title={`${phone.name} — specs, price & where to buy`}
+        description={`${phone.name} (${phone.brand}): £${phone.priceGBP}, ${phone.specs.screenSize}" screen, ${phone.specs.storageGB}GB. See full specs and find the best UK deal.`}
+        path={`/phone/${phone.id}`}
+        jsonLd={productJsonLd}
+      />
       <button
         onClick={() => navigate(-1)}
         className="text-ink-soft hover:text-ink font-semibold mb-4 transition-colors duration-fast"
@@ -205,4 +231,12 @@ export function PhoneDetail() {
       </div>
     </motion.div>
   );
+}
+
+// --- SSG wiring ---
+// Exported so vite-react-ssg pre-renders a static page per phone.
+export const Component = PhoneDetail;
+
+export function getStaticPaths(): string[] {
+  return getPhones().map((p) => `phone/${p.id}`);
 }

@@ -8,6 +8,7 @@ import { useFriendlyMotion } from '../components/common/motion';
 import { useApp } from '../state/AppContext';
 import { activeQuestions } from '../state/quizReducer';
 import { CORE_QUESTIONS, DETAILED_QUESTIONS } from '../domain/quiz.config';
+import { Seo } from '../seo/Seo';
 
 export function Quiz() {
   const navigate = useNavigate();
@@ -39,6 +40,7 @@ export function Quiz() {
 
   return (
     <div className="flex-1 flex flex-col py-6">
+      <Seo title="Take the quiz" path="/quiz" noindex />
       <ProgressBar current={state.currentStep + 1} total={total} />
 
       <div className="flex-1">

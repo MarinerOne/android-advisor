@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Thin / user-specific pages aren't useful in search results.
+Disallow: /results
+Disallow: /favourites
+Disallow: /quiz
+
+Sitemap: https://androidadvisor.net/sitemap.xml

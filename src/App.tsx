@@ -1,74 +1,33 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
-import { AppProvider } from './state/AppContext';
-import { Layout } from './components/common/Layout';
+import type { RouteRecord } from 'vite-react-ssg';
+import { RootLayout } from './components/common/RootLayout';
 import { Landing } from './routes/Landing';
 import { Quiz } from './routes/Quiz';
 import { Results } from './routes/Results';
 import { Browse } from './routes/Browse';
-import { PhoneDetail } from './routes/PhoneDetail';
 import { Favourites } from './routes/Favourites';
 
 /**
- * HashRouter is used so the static bundle also works when opened from a file
- * path inside a native WebView wrapper (no server-side routing needed).
- *
- * Browse / detail / favourites use the wide layout; quiz pages stay narrow.
+ * Route configuration for vite-react-ssg. Every route here is pre-rendered to
+ * static HTML at build time. The phone detail route is dynamic: its
+ * getStaticPaths (in PhoneDetail.tsx) enumerates all 100 phones so each gets
+ * its own crawlable page.
  */
-export default function App() {
-  return (
-    <AppProvider>
-      <HashRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Layout>
-                <Landing />
-              </Layout>
-            }
-          />
-          <Route
-            path="/quiz"
-            element={
-              <Layout>
-                <Quiz />
-              </Layout>
-            }
-          />
-          <Route
-            path="/results"
-            element={
-              <Layout wide>
-                <Results />
-              </Layout>
-            }
-          />
-          <Route
-            path="/browse"
-            element={
-              <Layout wide>
-                <Browse />
-              </Layout>
-            }
-          />
-          <Route
-            path="/phone/:id"
-            element={
-              <Layout wide>
-                <PhoneDetail />
-              </Layout>
-            }
-          />
-          <Route
-            path="/favourites"
-            element={
-              <Layout wide>
-                <Favourites />
-              </Layout>
-            }
-          />
-        </Routes>
-      </HashRouter>
-    </AppProvider>
-  );
-}
+export const routes: RouteRecord[] = [
+  {
+    path: '/',
+    element: <RootLayout />,
+    entry: 'src/components/common/RootLayout.tsx',
+    children: [
+      { index: true, Component: Landing },
+      { path: 'quiz', Component: Quiz },
+      { path: 'results', Component: Results },
+      { path: 'browse', Component: Browse },
+      { path: 'favourites', Component: Favourites },
+      {
+        path: 'phone/:id',
+        // Component + getStaticPaths are exported from PhoneDetail.tsx.
+        lazy: () => import('./routes/PhoneDetail'),
+      },
+    ],
+  },
+];

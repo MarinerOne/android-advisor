@@ -9,6 +9,7 @@ import {
 } from '../data/phonesRepository';
 import { PRICE_BAND_LABELS, type PriceBand } from '../domain/types';
 import { track } from '../analytics/analytics';
+import { Seo } from '../seo/Seo';
 
 type SortKey = 'price-asc' | 'price-desc' | 'name' | 'brand';
 
@@ -95,6 +96,11 @@ export function Browse() {
 
   return (
     <div className="flex-1 py-6">
+      <Seo
+        title="Browse all Android phones"
+        description="Browse and compare 100+ Android phones by brand, price, camera, battery and more. Find the right phone for your budget and needs."
+        path="/browse"
+      />
       <div className="flex items-center justify-between gap-3 mb-5 flex-wrap">
         <h1 className="text-3xl font-bold text-ink">Browse all phones</h1>
         <Button variant="secondary" onClick={() => navigate('/quiz')}>
