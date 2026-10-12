@@ -77,6 +77,15 @@ export interface Recommendation {
   tradeoffs?: string[];
 }
 
+/** Human-readable labels for each price band, in order. */
+export const PRICE_BAND_LABELS: { band: PriceBand; label: string }[] = [
+  { band: 'under-200', label: 'Under £200' },
+  { band: '200-400', label: '£200 – £400' },
+  { band: '400-600', label: '£400 – £600' },
+  { band: '600-800', label: '£600 – £800' },
+  { band: '800-plus', label: '£800+' },
+];
+
 /** Known question ids, kept in one place so logic and config stay in sync. */
 export const QUESTION_IDS = {
   budget: 'budget',

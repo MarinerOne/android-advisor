@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import type { Recommendation } from '../../domain/types';
 import { hasUsableRetailerLink, resolveRetailerLink } from '../../data/affiliate';
 import { Card } from '../common/Card';
+import { FavouriteButton } from '../common/FavouriteButton';
 import { useFriendlyMotion } from '../common/motion';
 
 const FALLBACK_IMAGE =
@@ -52,8 +54,17 @@ export function ResultCard({
           alt={phone.name}
           className="w-full h-40 object-cover rounded-md mb-4 bg-surface-alt"
         />
+        <div className="flex items-start justify-between gap-2 mb-2">
+          <Link
+            to={`/phone/${phone.id}`}
+            className="text-xl font-bold text-ink hover:text-primary transition-colors duration-fast rounded focus-visible:outline-none"
+          >
+            {phone.name}
+          </Link>
+          <FavouriteButton phoneId={phone.id} phoneName={phone.name} />
+        </div>
         <div className="flex items-baseline justify-between gap-2 mb-1">
-          <h3 className="text-xl font-bold text-ink">{phone.name}</h3>
+          <span className="text-sm text-ink-soft">Price</span>
           <span className="text-lg font-bold text-primary whitespace-nowrap">
             £{phone.priceGBP}
           </span>

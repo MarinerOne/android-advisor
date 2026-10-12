@@ -30,9 +30,18 @@ export function Landing() {
         budget. We&apos;ll match you with three great picks. Takes about a
         minute.
       </p>
-      <Button onClick={start} className="text-lg px-8 py-4">
-        Let&apos;s go 🚀
-      </Button>
+      <div className="flex flex-col sm:flex-row gap-3 items-center">
+        <Button onClick={start} className="text-lg px-8 py-4">
+          Let&apos;s go 🚀
+        </Button>
+        <Button
+          variant="secondary"
+          onClick={() => navigate('/browse')}
+          className="text-lg px-8 py-4"
+        >
+          Browse all phones
+        </Button>
+      </div>
       <p className="text-sm text-ink-soft mt-4">
         No sign-up needed. Just four quick questions.
       </p>
